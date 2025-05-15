@@ -24,12 +24,11 @@ The password should be encrypted and the password field shouldn't be displayed i
 
 ## Language and Technology used:
 
-1. Html,css
-2. Javascript
-3. React
-4. MongoDb
-5. Express
-6. Redux Toolkit 
+
+1. React
+2. MongoDb
+3. Express
+4. Redux Toolkit 
 
 ## Installing
 
@@ -66,26 +65,26 @@ npm install
 ## HomePage
 Hospital Management System in mern stack. This system has a ‘Home’ page from where the patient & administrator can login into their accounts by toggling the tabs accordingly...
 
-![homepage](<Screenshot (4).png>)
+![homepage Screenshot](<screenshots/home.png>)
 
 
 
 ## Contact us page
 
 ‘Contact’ page allows users to provide feedback or queries about the services of the hospital. 
-![contact page](<Screenshot (9).png>)
+![contact page Screenshot](<screenshots/contacts.png>)
 
 
 ## Login
 To make  a Appointment of Doctor user must be login first.
 
-![login page](login.png)
+![login page Screenshot](login.png)
 
 
 ##  Book his/her appointment:
 After Login in successfully user book their  Appointment. The appointment form requires patients to select  Date and Time that they want to meet with the doctor and add their desease. The consultancy fee will be added by the administrator.
 
-![Appoitnment](<Screenshot (7).png>)
+![Appoitnment Screenshot](<screenshots/appointment.png>)
 
 
 ## Add invoice from admin pannel
@@ -93,17 +92,9 @@ After Login in successfully user book their  Appointment. The appointment form r
 After the process of Appointment is completed.Administrator add the invoice for each Appointment.
 
 
-![add invoice](<Screenshot (20)-1.png>)
+![add invoice Screenshot](<screenshots/adminuser.png>)
 
 
-## payment 
-
- Go to dashboard to see history of Appointment.  Now user can pay his bill through khalti payment gateway.
-
-![user-dashboard](<Screenshot (17).png>)
-
-
-![khalti-payment](<Screenshot (18).png>)
 
 
 
@@ -114,10 +105,10 @@ After the process of Appointment is completed.Administrator add the invoice for 
    This module is the heart of our project where an admin can see the list of all patients. Admin also can add the invoice for each user..who make a appointment of doctor. Admin can also Add docotor ,Delete Doctor.
 
    
-![admin-user](<Screenshot (20).png>)
+![admin-user Screenshot](<screenshots/adminuser.png>)
 
 
-![admin-doctor](<Screenshot (19).png>)
+![admin-doctor Screenshot](<admindocto.png>)
 
 
 
