@@ -49,7 +49,7 @@ cd backend
 npm install 
 ```
 
-5.	Go back to the Terminal (PowerShell) and be sure that you are pointing inside the project folder. To open the application, type ‘npm run dev ’ and press Enter.
+5.	Go back to the Terminal (PowerShell) and be sure that you are pointing inside the project folder. To open the application, type ‘npm run dev ’ in  backend  and type ‘npm start ’ in frontend  press Enter.
 6.	The application should be live on the local port 3000.  
 7.	Type http://localhost:3000/ into a browser.
 
