@@ -1,0 +1,37 @@
+const mongoose = require("mongoose");
+const user = require("./model/user");
+const bcryptjs = require("bcryptjs");
+const dotenv = require("dotenv");
+dotenv.config();
+
+const seed = async () => {
+  try {
+    await mongoose.connect(process.env.DB_URL);
+    const hashed_password = await bcryptjs.hash(process.env.PASSWORD, 8);
+    const user_name = process.env.USER_NAME;
+    const email = process.env.EMAIL;
+    const is_admin = true;
+
+    // Find one user by email
+    const ad_user = await user.findOne({ email });
+    if (ad_user) {
+      console.log("Admin user already exists");
+      return;
+    }
+
+    const admin_user = await user.create({
+      username: user_name,
+      password: hashed_password,
+      email: email,
+      is_admin,
+    });
+
+    console.log("Admin created successfully:", admin_user);
+  } catch (error) {
+    console.error("Error creating admin:", error);
+  } finally {
+    await mongoose.disconnect();
+  }
+};
+
+seed();
